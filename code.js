@@ -41,7 +41,10 @@ console.log("For Loops - Exercise Three");
 //
 // Write your code here 👇
 
-
+for(let i = 2; i <= 20; i++) {
+  if(i % 2 === 0)
+  console.log(i)
+}
 
 // ----------------------------------------------------------------------------------------------
 // The following exercises will use the numbers array below
@@ -55,6 +58,10 @@ console.log("For Loops - Exercise Four");
 //
 // Write your code here 👇
 
+for(let i = 0; i < numbers.length; i++) {
+  console.log(numbers[i])
+}
+
 // ----------------------------------------------------------------------------------------------
 console.log("For Loops - Exercise Five");
 // - Create another for loop
@@ -62,6 +69,8 @@ console.log("For Loops - Exercise Five");
 //   printing out numbers LESS THAN (but not including) 20.
 //
 // Write your code here 👇
+
+
 
 // ----------------------------------------------------------------------------------------------
 console.log("For Loops - Exercise Six");
@@ -92,3 +101,61 @@ console.log("For Loops - Exercise Eight");
 // When you are done with all of the exercises, check your console output to make sure it
 // matches the expected output of each exercise and remove any extranneous console.log()
 // statements from your code.
+
+/**********************/
+/* More Practice with JavaScript*/
+/**********************/
+//ARRAYS
+
+
+// EXAMPLE 1
+
+let array1 = ['ant', 'bird', 'cat', 'dog'];
+console.log(array1[1])
+// answer is 'bird'
+
+// EXAMPLE 2
+
+let object1 = { name: "Eric", job: "instructor"};
+console.log(object1.name)
+// answer is "Eric"
+
+// or you can do this below
+console.log(object1["name"])
+// same answer - "Eric"
+
+// EXAMPLE 3
+
+let array2 = [
+  ['ant', 'bee', 'beetle'],
+  ['cat', 'jaguar', 'lion'],
+  ['crow', 'raven', 'seagull'],
+];
+console.log(array2[0][0]);
+// answer is 'ant'
+console.log(array2[1][2])
+// answer is 'lion'
+
+// EXAMPLE 4
+
+let array3 = [
+  {species: "dog", name: "Spot"},
+  {species: "cat", name: "Whiskers"},
+  {species: "owl", name: "Hootie"},
+];
+console.log(array3[1].name);
+// answer is "Whiskers"
+console.log(array3[2].species);
+// answer is "owl"
+
+// EXAMPLE 5
+
+// query selector selects class (.) or id (#) before class or id name
+let bird = document.querySelector(".bird");
+// selects div class of bird
+
+// to change class name
+bird.textContent = "raven";
+
+console.log(bird.textContent)
+
