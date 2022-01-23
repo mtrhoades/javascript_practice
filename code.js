@@ -148,14 +148,48 @@ console.log(array3[1].name);
 console.log(array3[2].species);
 // answer is "owl"
 
-// EXAMPLE 5
 
-// query selector selects class (.) or id (#) before class or id name
-let bird = document.querySelector(".bird");
-// selects div class of bird
+// // EXAMPLE 5
+// // query selector selects class (.) or id (#) before class or id name
+// let bird = document.querySelector(".bird");
+// // selects div class of bird
 
-// to change class name
-bird.textContent = "raven";
+// // to change class name
+// bird.textContent = "raven";
 
-console.log(bird.textContent)
+// console.log(bird.textContent)
 
+
+
+// constructor, method practice //
+
+class Dog {
+  constructor(name) {
+    this.legs = 4;
+    this.name = name;
+  }
+  
+  bark() {
+    console.log("woof! woof!");
+  }
+}
+
+const dog = new Dog('Ruckus');
+// dog.bark();
+// console.log(dog.legs)
+
+class borderCollie extends Dog {
+  constructor(name) {
+    super(name);
+  }
+
+  rollOver() {
+    console.log(`Hello I am ${this.name}, I can roll over!`);
+
+  }
+}
+
+const borderCollie = new borderCollie('Freemont');
+borderCollie.bark();
+borderCollie.rollOver();
+console.log(borderCollie.legs);
